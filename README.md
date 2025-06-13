@@ -17,7 +17,7 @@ Suporte a **multi-idioma (Português/Inglês)** via `ResourceBundle`.
 - Eclipse IDE 2025-06
 - iTextPDF (para exportação de PDF)
 - ResourceBundle (multi-idioma)
-- ScreenToGif (para gravação do GIF)
+- OBS para gravar o video
 
 ---
 
