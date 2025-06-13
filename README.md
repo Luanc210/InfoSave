@@ -20,7 +20,7 @@ A simple desktop system developed in **Java 21** for user registration, console 
 - Eclipse IDE
 - iTextPDF (PDF export)
 - ResourceBundle (multi-language)
-- ScreenToGif (GIF recording)
+- Open Broadcaster Software (OBS recording)
 
 ---
 
