@@ -14,13 +14,50 @@ A simple desktop system developed in **Java 21** for user registration, console 
 
 ---
 
+## ⚠️ Requisitos obrigatórios
+
+Para compilar e executar este projeto corretamente, é necessário:
+
+- ✅ **Java 21 instalado e configurado no PATH**
+  - Você pode baixar em: [https://adoptium.net/pt-br/temurin/releases/?version=21](https://adoptium.net/pt-br/temurin/releases/?version=21)
+  - Confirme a versão instalada com:
+    ```bash
+    java -version
+    ```
+
+- ✅ **Biblioteca iText 2.1.7** para geração de arquivos PDF
+  - Baixe em: [https://mvnrepository.com/artifact/com.lowagie/itext/2.1.7](https://mvnrepository.com/artifact/com.lowagie/itext/2.1.7)
+  - Coloque o arquivo `itext-2.1.7.jar` dentro da pasta `/lib/` do projeto
+
+---
+
+## 📌 Compilação com dependência iText (Java 21)
+
+**No terminal, dentro da pasta `src/`:**
+
+```bash
+javac -cp "../lib/itext-2.1.7.jar;../bin" -d ../bin main/*.java
+```
+
+## 📌 Execução com dependência iText (Java 21)
+
+**No terminal, dentro da pasta `src/`:**
+
+```bash
+java -cp "../lib/itext-2.1.7.jar;../bin" main.Main
+```
+
+⚠️ **Importante:** Tentar rodar com Java 8 ou versões antigas causará erro `UnsupportedClassVersionError` pois o projeto foi compilado com Java 21.
+
+---
+
 ## 📌 Tecnologias / Technologies
 
 - Java 21
 - Eclipse IDE
 - iTextPDF (PDF export)
 - ResourceBundle (multi-language)
-- Open Broadcaster Software (OBS recording)
+- ScreenToGif (GIF recording)
 
 ---
 
@@ -50,29 +87,6 @@ Choose the language (pt/en):
 
 ---
 
-## 🚀 Como executar / How to Run
-
-**Compilar / Compile:**
-
-```bash
-javac -d bin src/main/*.java
-```
-
-**Executar / Run:**
-
-```bash
-java -cp bin main.Main
-```
-
----
-
-## 🖥️ Exportação para PDF / Export to PDF
-
-Um arquivo chamado `usuarios.pdf` será gerado na pasta do projeto.  
-A file named `usuarios.pdf` will be generated in the project directory.
-
----
-
 ## 📦 Estrutura / Project Structure
 
 ```
@@ -83,6 +97,8 @@ A file named `usuarios.pdf` will be generated in the project directory.
     UserManager.java
     PdfExporter.java
     Mensagens.java
+/lib/
+  itext-2.1.7.jar
 /assets/
   demo.gif
 messages_en_US.properties
