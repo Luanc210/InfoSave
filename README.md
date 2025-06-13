@@ -1,51 +1,104 @@
-# 📋 InfoSave — Cadastro de Usuários em Java
+# 📋 InfoSave — Java Desktop User Manager
 
-Sistema desktop simples feito em **Java 21** para cadastro de usuários com nome e idade, gerenciamento via console e exportação de lista para PDF.  
-Suporte a **multi-idioma (Português/Inglês)** via `ResourceBundle`.
+Sistema desktop simples desenvolvido em **Java 21** para cadastro de usuários, gerenciamento via console e exportação de lista para PDF.  
+✅ Suporte a **multi-idioma (Português/Inglês)** via `ResourceBundle`.
 
----
-
-## 📸 Demonstração
-
-![Demonstração do projeto](assets/2025-06-12-23-03-50.gif)
+A simple desktop system developed in **Java 21** for user registration, console management, and exporting user list to PDF.  
+✅ Supports **multi-language (Portuguese/English)** via `ResourceBundle`.
 
 ---
 
-## 📌 Tecnologias
+## 📸 Demonstração / Demo
+
+![Demonstração do projeto / Project Demo](assets/demo.gif)
+
+---
+
+## 📌 Tecnologias / Technologies
 
 - Java 21
-- Eclipse IDE 2025-06
-- iTextPDF (para exportação de PDF)
-- ResourceBundle (multi-idioma)
-- OBS para gravar o video
+- Eclipse IDE
+- iTextPDF (PDF export)
+- ResourceBundle (multi-language)
+- ScreenToGif (GIF recording)
 
 ---
 
-## 🎨 Funcionalidades
+## 🌐 Idiomas / Languages Supported
 
-- 📥 Adicionar usuário
-- 📜 Listar usuários
-- ❌ Remover usuário pelo nome
-- 🗑️ Remover todos os usuários
-- 📄 Exportar usuários cadastrados para PDF
-- 🌐 Suporte a mensagens em **Português e Inglês**
+🇧🇷 **Português (pt-BR)**  
+🇺🇸 **English (en-US)**  
 
----
+O idioma é escolhido no início da execução:  
+The language is chosen at program start:
 
-## 📚 Multi-idioma
-
-Os textos da aplicação estão organizados em arquivos:
-- `messages_pt_BR.properties` (português)
-- `messages_en_US.properties` (inglês)
-
-O idioma é definido no início da execução.
+```
+Escolha o idioma (pt/en):
+Choose the language (pt/en):
+```
 
 ---
 
-## 🚀 Como executar
+## 📥 Funcionalidades / Features
 
-1. Certifique-se de ter o **Java 21** instalado.
-2. Compile os arquivos:
+- 📥 Adicionar usuário / Add user
+- 📜 Listar usuários / List users
+- ❌ Remover usuário / Remove user
+- 🗑️ Remover todos os usuários / Remove all users
+- 📄 Exportar lista para PDF / Export list to PDF
+- 🌐 Multi-idioma via ResourceBundle / Multi-language support via ResourceBundle
+
+---
+
+## 🚀 Como executar / How to Run
+
+**Compilar / Compile:**
 
 ```bash
 javac -d bin src/main/*.java
+```
+
+**Executar / Run:**
+
+```bash
+java -cp bin main.Main
+```
+
+---
+
+## 🖥️ Exportação para PDF / Export to PDF
+
+Um arquivo chamado `usuarios.pdf` será gerado na pasta do projeto.  
+A file named `usuarios.pdf` will be generated in the project directory.
+
+---
+
+## 📦 Estrutura / Project Structure
+
+```
+/src/
+  /main/
+    Main.java
+    User.java
+    UserManager.java
+    PdfExporter.java
+    Mensagens.java
+/assets/
+  demo.gif
+messages_en_US.properties
+messages_pt_BR.properties
+README.md
+```
+
+---
+
+## 📈 Status
+
+✅ **Projeto finalizado e funcional / Project completed and working**
+
+---
+
+## ✍️ Autor / Author
+
+**Luanc210**  
+[GitHub](https://github.com/Luanc210)
