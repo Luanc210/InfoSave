@@ -116,5 +116,5 @@ README.md
 
 ## ✍️ Autor / Author
 
-**Luanc210**  
+**Luan Costa S Pereira**  
 [GitHub](https://github.com/Luanc210)
