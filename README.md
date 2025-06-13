@@ -57,7 +57,7 @@ java -cp "../lib/itext-2.1.7.jar;../bin" main.Main
 - Eclipse IDE
 - iTextPDF (PDF export)
 - ResourceBundle (multi-language)
-- ScreenToGif (GIF recording)
+- Open Broadcaster Software (OBS recording)
 
 ---
 
