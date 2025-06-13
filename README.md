@@ -7,7 +7,7 @@ Suporte a **multi-idioma (Português/Inglês)** via `ResourceBundle`.
 
 ## 📸 Demonstração
 
-![Demonstração do projeto](assets/demo.gif)
+![Demonstração do projeto](assets/2025-06-12-23-03-50.gif)
 
 ---
 
